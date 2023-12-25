@@ -1,0 +1,4 @@
+node_modules
+gql-queries
+# Local Netlify folder
+.netlify
