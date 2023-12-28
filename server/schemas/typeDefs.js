@@ -13,6 +13,7 @@ const typeDefs = `
     category: String
     image: String
     video: String
+    source: String
     ingredient1: String
     ingredient2: String
     ingredient3: String
@@ -57,6 +58,7 @@ const typeDefs = `
     category: String
     image: String
     video: String
+    source: String
     ingredient1: String
     ingredient2: String
     ingredient3: String

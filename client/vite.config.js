@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
+// front end port supported by vite/react
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -9,7 +10,7 @@ export default defineConfig({
     open: true,
     proxy: {
       '/graphql': {
-        target: 'https://book-search-engine-s445.onrender.com',
+        target: 'http://localhost:3001',
         secure: false,
         changeOrigin: true,
       }

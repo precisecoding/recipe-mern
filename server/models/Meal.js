@@ -22,6 +22,9 @@ const mealSchema = new Schema({
     video: {
         type: String,
     },
+    source: {
+        type: String,
+    },
     ingredient1: {
         type: String,
     },
@@ -65,9 +68,6 @@ const mealSchema = new Schema({
         type: String,
     },
     ingredient15: {
-        type: String,
-    },
-    ingredient1: {
         type: String,
     },
     measure1: {

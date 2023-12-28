@@ -6,7 +6,7 @@ const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 const { authMiddleware } = require('./utils/auth');
 const cors = require('cors');
-
+const striperoutes = require('./routes/stripe-route');
 // CORS configuration
 const corsOptions = {
   origin: '*', 
@@ -26,6 +26,7 @@ const server = new ApolloServer({
 
 const app = express();
 app.use(cors(corsOptions));
+app.use('/api/stripe', striperoutes);
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async () => {
   await server.start();

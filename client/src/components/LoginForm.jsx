@@ -1,12 +1,10 @@
 // see SignupForm.js for comments
-
 import { useState, useEffect } from 'react';
-import { Form, Button, Alert } from 'react-bootstrap';
-
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
-
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Auth from '../utils/auth';
+import { Alert, Avatar, Box, Button, Grid, Link, TextField, Typography } from '@mui/material';
 
 const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
@@ -57,52 +55,76 @@ const LoginForm = () => {
 
   return (
     <>
-      <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
-        <Alert
-          dismissible
-          onClose={() => setShowAlert(false)}
-          show={showAlert}
-          variant="danger"
-        >
-          Something went wrong with your login credentials!
-        </Alert>
-        <Form.Group className='mb-3'>
-          <Form.Label htmlFor="email">Email</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Your email"
-            name="email"
-            onChange={handleInputChange}
-            value={userFormData.email}
-            required
-          />
-          <Form.Control.Feedback type="invalid">
-            Email is required!
-          </Form.Control.Feedback>
-        </Form.Group>
-
-        <Form.Group className='mb-3'>
-          <Form.Label htmlFor="password">Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Your password"
-            name="password"
-            onChange={handleInputChange}
-            value={userFormData.password}
-            required
-          />
-          <Form.Control.Feedback type="invalid">
-            Password is required!
-          </Form.Control.Feedback>
-        </Form.Group>
-        <Button
-          disabled={!(userFormData.email && userFormData.password)}
-          type="submit"
-          variant="success"
-        >
-          Submit
-        </Button>
-      </Form>
+      <Box
+        sx={{
+          marginTop: 8,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
+        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Log In
+        </Typography>
+        <Box component="form" noValidate validated={validated} onSubmit={handleFormSubmit} sx={{ mt: 3 }}>
+          <Grid container spacing={2}>
+            <Box >
+              {showAlert && <Alert
+                onClose={() => setShowAlert(false)}
+              >Something went wrong with your Log in!</Alert>}
+            </Box>
+            <Grid item xs={12}>
+              <TextField
+                required
+                fullWidth
+                id="email"
+                label="Email Address"
+                name="email"
+                autoComplete="email"
+                onChange={handleInputChange}
+                value={userFormData.email}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                required
+                fullWidth
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="new-password"
+                onChange={handleInputChange}
+                value={userFormData.password}
+              />
+            </Grid>
+          </Grid>
+          <Button
+            type="submit"
+            fullWidth
+            disabled={
+              !(
+                userFormData.email &&
+                userFormData.password
+              )
+            }
+            variant="contained"
+            sx={{ mt: 3, mb: 2 }}
+          >
+            Log In
+          </Button>
+          <Grid container justifyContent="flex-end">
+            <Grid item>
+              <Link href="/registration" variant="body2">
+                Dont have an account? Sign Up
+              </Link>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
     </>
   );
 };
