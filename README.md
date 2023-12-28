@@ -1,156 +1,100 @@
 # 23 Final Project: MERN Stack Single-Page Application
 
-Projects have played a key role in your journey to becoming a full-stack web developer. As you apply for development jobs, your portfolio is absolutely vital to opening doors to opportunities. Your portfolio showcases high-quality deployed examples of your work, and you can use your finished projects for that very purpose. 
+## Description
+
+Projects have played a key role in your journey to becoming a full-stack web developer. As you apply for development jobs, your portfolio is absolutely vital to opening doors to opportunities. Your portfolio showcases high-quality deployed examples of your work, and you can use your finished projects for that very purpose.
 
 This project is a fantastic opportunity to show employers your collaborative skills and coding abilities, especially in the context of a scalable, user-focused MERN app. Remember that employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
 
-## Project Requirements
+## Motivation
 
-Your group will use everything you’ve learned throughout this course to create a MERN stack single-page application that works with real-world data to solve a real-world challenge, with a focus on data and user demand. This project will provide you with the best opportunity to demonstrate your problem-solving skills, which employers will want to see during interviews. Once again, the user story and acceptance criteria will depend on the project that you create, but your project must fulfill the following requirements:
+I was motivated to complete this assignment to learn more about the popular technology architecture known as MERN stack: front end, back end, and database using GraphQL, Apollo server, JavaScript and JSON. MERN stands for MongoDB, Express, React, Node, after the four key technologies that make up the stack. This is a popular and powerful stack for building full-stack web applications.
 
-* Use React for the front end.
+## Mock-Up
 
-* Use GraphQL with a Node.js and Express.js server.
+The following screenshot shows the web application's appearance and functionality:
 
-* Use MongoDB and the Mongoose ODM for the database.
 
-* Use queries and mutations for retrieving, adding, updating, and deleting data.
+Recipe Search Engine
+![Screenshot of web app showing a recipe search engine on page load.](./client/src/assets/pageload.png)
 
-* Be deployed using Heroku (with data).
 
-* Have a polished UI.
+## Why
 
-* Be responsive.
+I created this project because I wanted to further challenge myself while learning more about MERN stack, GraphQL, and Apollo server. I wanted to learn how to use GraphQL and apollo server to query and manipulate data, streamlining data fetching and management, reducing the requests on the server and increasing speed. This inlcudes a strongly typed API with schema validation, state management in client applications, and enhanced security with controlled data access. I wanted to learn how MongoDB works extremely well with Node.js, and makes storing, manipulating, and representing JSON data at every tier of your application incredibly easy. For cloud-native applications.
 
-* Be interactive (i.e., accept and respond to user input).
+## What problem does it solve?
 
-* Include authentication (JWT).
+This project solves the problem of having to search for your favorite recipe when you just cant figure out what to make for your next meal. This project solves the problem of having to make multiple requests to the server to get the data you need. GraphQL and apollo server allows you to query and manipulate data, streamlining data fetching and management, reducing the requests on the server and increasing speed. This is a lightweight alternative to REST for client-server communication. It also solves the problem of having to use multiple technologies to create a full stack application.
 
-* Protect sensitive API key information on the server.
+## What did you learn
 
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class and id naming conventions, indentation, high-quality comments, etc.).
+I learned how to use GraphQL and apollo server to query and manipulate data, using a well structured model to define the data in the database, and a schema to define the data types for the queries and mutations. I learned how to use GraphQL and apollo server to streamlining data fetching and management, reducing the requests on the server and increasing speed. I learned about react and using Type Definitions with Apollo Server: Defining data types and operations in the GraphQL schema. This helps in managing how data is fetched and manipulated, providing a clear structure to your application's data.
+Creating a Global Store: This can be done using the Context API or Redux. A global store holds the state of your application in a central place, making it accessible throughout the app. Redux is particularly powerful for complex applications, as it provides a more structured approach to state management compared to the Context API.
+Refactoring an App to Use Redux: To shift from Context API to Redux, you need to set up a Redux store, define reducers and actions, and replace Context API calls with Redux hooks (useDispatch and useSelector) in your components. This allows for more robust state management, especially for larger and more complex applications. 
 
-* Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+I learned why MERN  For cloud-native applications, MongoDB Atlas provides a fully managed database as a service. I learned how to use MongoDB Atlas to create a database, connect to it, and perform CRUD operations.
 
-### CSS Styling
+## What makes your project stand out?
 
-Instead of using a CSS library like Bootstrap, consider one of the following suggestions:
+My project stands out because it uses GraphQL, apollo server, MERN stack, MongoDB Atlas with cloud accessability, and is deployed on render, and netlify. Incorporating Apollo Server and GraphQL into a MERN stack application with MongoDB Atlas provides a robust, efficient, and developer-friendly environment. It enhances the application's scalability, maintainability, and performance, making it a compelling choice for modern web application development.
 
-* Look into the concept of CSS-in-JS, which abstracts CSS to the component level, using JavaScript to describe styles in a declarative and maintainable way. Some popular libraries include [styled-components](https://styled-components.com/) and [Emotion](https://emotion.sh/docs/introduction).
+## Installation
 
-* Try using a component library, such as [Semantic UI](https://semantic-ui.com/), [Chakra UI](https://chakra-ui.com/), or [Ant Design](https://ant.design/).
+first type npm install in the terminal, then npm run develop in the terminal to start the server.
 
-* Create all the CSS for your application just using CSS.
+## Usage
 
-Ultimately, it doesn't matter which of these options you choose&mdash;it just needs to look professional and be mobile-friendly.
+You can use this web application to sign up/login as a user then search for recipes, view details about the recipes you have searched for populating links to the source and a detailed youtube video to display how to prepare this recipe, save the recipes you have searched for, and delete recipes you have searched for. You can also make donations to the site.
 
-### Payment Platform
+Page Load
+![Screenshot of web app showing a recipe search engine on page load.](./client/src/assets/pageload.png)
 
-Consider integrating the Stripe payment platform. Even if you don’t create an e-commerce application, you could set up your site to accept charitable donations.
+Search for Recipes
+![Screenshot of web app showing a recipe search engine with a search shown as an example.](./client/src/assets/recipesearch.png)
 
-### Bonus
+Save Recipe Searches
+![Screenshot of web app showing the save recipe function.](./client/src/assets/saverecipe.png)
 
-Although this is not a requirement for your project, see if you can also implement functionality to meet the minimum requirements of a PWA:
+View Details of a Recipe Search
+![Screenshot of web app showing the delete recipe function.](./client/src/assets/viewrecipedetails.png)
 
-* Uses a web manifest
+Delete Recipe Searches
+![Screenshot of web app showing the delete recipe function.](./client/src/assets/deleterecipe.png)
 
-* Uses a service worker for offline functionality
+### Link to github repo
 
-* Is installable
+<https://github.com/precisecoding/recipe-mern>
 
-## Presentation Requirements
+### Deployed link
 
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following:
+Deployed on render.com:
+<https://recipedb-ug34.onrender.com>
 
-* Elevator pitch: a one minute description of your application
+Deployed on netlify:
+[booksearchengine4dubtcmp.netlify.app, netlify link](https://)
 
-* Concept: What is your user story? What was your motivation for development?
+### This site was built using netlify and render
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+Render:
+<https://render.com/>
 
-* Demo: Show your stuff!
+Netlify:
+<https://netlify.com>
 
-* Directions for Future Development
+MongoDB Atlas:
+<https://www.mongodb.com/atlas/database>
 
-* Links to the deployed application and the GitHub repository. Use the [Guide to Deploy with Heroku and MongoDB Atlas](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas) on The Full-Stack Blog if you need a reminder on how to deploy to Heroku.
+Apollo Server/GraphQL:
+<https://www.apollographql.com/docs/react/>
 
-## Grading Requirements
+### License
 
-This project is graded based on the following criteria:
+MIT License:
+<https://opensource.org/licenses/MIT>
+<https://choosealicense.com/licenses/mit/>
+LICENSE file included in repository.
 
-### Technical Acceptance Criteria: 25%
+### Thanks to everyone for support and contributions
 
-* Satisfies the following code requirements:
-
-  * Application uses React for the front end.
-
-  * Application has a GraphQL API with a Node.js and Express.js server, and uses queries and mutations for retrieving, adding, updating, and deleting data.
-
-  * Application uses MongoDB and the Mongoose ODM for the database and protects sensitive API key information on the server.
-
-  * Application includes user authentication using JWT.
-
-### Concept 10%
-
-* Application should be a unique and novel idea.
-
-* Your group should clearly and concisely articulate your project idea.
-
-### Deployment: 20%
-
-* Application deployed at live URL on Heroku and loads with no errors.
-
-* Application GitHub URL submitted.
-
-### Repository Quality: 10%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class and id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains a high-quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application is responsive.
-
-### Presentation 10%
-
-* Your group should present using a slide deck.
-
-* Every group member should speak during the presentation.
-
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-### Collaboration 10%
-
-* There are no major disparities in the number of GitHub contributions between group members.
-
-### Bonus
-
-Fulfilling all three of the following requirements to turn your app into a PWA will add 10 points to your grade. Note that the highest grade you can achieve is still a 100:
-
-* Uses a web manifest
-
-* Uses a service worker for offline functionality
-
-* Is installable
-
-## How to Submit Your MERN Stack Single-Page Application
-
-**Each member of your group** is required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Sources used: <https://developer.mozilla.org/en-US/>, <https://www.w3schools.com/>, <https://stackoverflow.com/>
