@@ -72,7 +72,10 @@ Deployed on render.com:
 <https://recipedb-ug34.onrender.com>
 
 Deployed on netlify:
-[booksearchengine4dubtcmp.netlify.app, netlify link](https://)
+[Netlify Deployed Link](https://recipedbmernstack.netlify.app/)
+
+Netlify Link:
+https://recipedbmernstack.netlify.app/ 
 
 ### This site was built using netlify and render
 
