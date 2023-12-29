@@ -14,7 +14,7 @@ import Navbar from './components/Navbar';
 
 // Construct our main GraphQL API endpoint. Creates an endpoint "localhost:3001/graphql" for GraphQL to fetch from and query requests from the client side, then from the server there will be a response.
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: 'https://recipedb-ug34.onrender.com/graphql',
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header

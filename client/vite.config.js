@@ -10,7 +10,7 @@ export default defineConfig({
     open: true,
     proxy: {
       '/graphql': {
-        target: 'https://recipedb-ug34.onrender.com',
+        target: 'https://recipedb-ug34.onrender.com', 
         secure: false,
         changeOrigin: true,
       }
